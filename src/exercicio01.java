@@ -11,14 +11,20 @@ public class exercicio01 {
 
         for (int i = 1; i < 51; i++) {
             do {
-                System.out.print("Digite a altura do indivíduo nº " + i);
+                System.out.print("Digite a altura do indivíduo nº " + i + " :");
                 altura = sc.nextFloat();
-            } while (altura > 1 & altura < 2.5);
+                if (altura < 1 & altura > 2.5) {
+                    System.out.println("Por gentileza digite uma altura válida!!!");
+                }
+            } while (altura < 1 & altura > 2.5);
             do {
                 System.out.println("Digite o sexo do indivíduo nº " + i);
                 System.out.print("Sendo 'm' para masculino e 'f' para feminino: ");
                 sexo = sc.next().charAt(0);
-            } while (sexo == 'm' | sexo == 'f');
+                if (sexo != 'm' & sexo != 'f') {
+                    System.out.println("Por gentileza digite um valor válido para o sexo do indivíduo!!!");
+                }
+            } while (sexo != 'm' & sexo != 'f');
 
         }
 
