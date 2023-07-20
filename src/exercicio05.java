@@ -37,8 +37,8 @@ public class exercicio05 {
 
         System.out.println("Nº de pessoas que responderam SIM: " + nSim);
         System.out.println("Nº de pessoas que responderam NÃO: " + nNao);
-        System.out.println("Porcentagem de pessoas do sexo feminino q responderam SIM: " + (qFem * 100) / qFemSim + "%" );
-        System.out.println("Porcentagem de pessoas do sexo masculino q responderam NÃO: " + (qMasc * 100) / qMascNao + "%" );
+        System.out.println("Porcentagem de pessoas do sexo feminino q responderam SIM: " + (qFemSim * 100) / qFem + "%" );
+        System.out.println("Porcentagem de pessoas do sexo masculino q responderam NÃO: " + (qMascNao * 100) / qMasc + "%" );
 
         sc.close();
     }
