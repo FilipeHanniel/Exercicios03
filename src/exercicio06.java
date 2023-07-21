@@ -14,6 +14,10 @@ public class exercicio06 {
         do {
             System.out.println("Digite o sexo da criança morta, sendo 'm' para masculino e 'f' para feiminino: ");
             sexo = sc.next().charAt(0);
+            if (sexo == ' ') {
+                System.out.println("vazio");
+                break;
+            }
             System.out.println("Digite a idade em meses da criança morta: ");
             idadeMorta = sc.nextInt();
             totalMorta += 1;
