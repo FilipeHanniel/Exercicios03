@@ -4,16 +4,23 @@ public class teste {
 
     public static void main(String[] args) {
         
-        char teste;
-        Scanner sc = new Scanner(System.in);
-        teste = sc.next().charAt(0);
         
-        if (teste == '\0') {
+        String teste1;       
+        Scanner sc = new Scanner(System.in);
+        
+        teste1 = sc.nextLine();
+        
+        if (!teste1.equals("")) {
+            System.out.println("não igual a vazio");
+        }
+                
+        if (teste1.equals("")) {
 
             System.out.println("vazio");
         }
 
         sc.close();
+        System.out.println("variavel:_" + teste1 + "_");
     }
      
 }
